@@ -249,7 +249,7 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  visibility: visible;
 }
 
 .backdrop.is-hidden .modal {
@@ -459,11 +459,13 @@ img {
 }
 
 .links-team:hover,
-.links-team:focus,
+.links-team:focus {
+  background-color: var(--accent-color);
+}
+
 .links-team:hover .icons-team,
 .links-team:focus .icons-team {
   fill: var(--main-bg-color);
-  background-color: var(--accent-color);
 }
 
 .icons-list .links-list + .links-list {
@@ -608,7 +610,7 @@ img {
 .filters {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filters .item + .item {
